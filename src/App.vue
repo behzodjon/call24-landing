@@ -441,6 +441,8 @@
         <p class="footer__developer-text">Copyright © 2023 <span> Call24.</span> Barcha huquqlar himoyalangan</p>
         <a href="https://realsoft.uz/" target="_blank" class="footer__developer-link common__purehover">
           <p>Sayt yaratuvchisi: <span>REALSOFT</span></p>
+          <p>{{ $t('welcome') }}</p>
+          <p>{{ $t('hello', { name: 'John' }) }}</p>
         </a>
       </div>
     </div>
