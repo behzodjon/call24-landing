@@ -10,17 +10,17 @@
       </div>
       <div class="header__links">
         <ul>
-          <li><a href="#" class="header__links-item">Bosh sahifa</a></li>
-          <li><a href="#opportunities" class="header__links-item">Imkoniyatlar</a></li>
-          <li><a href="#advantages" class="header__links-item">Afzalliklar</a></li>
-          <li><a href="#tarrifs" class="header__links-item">Tariflar</a></li>
-          <li><a href="#contact" class="header__links-item">Aloqa</a></li>
+          <li><a href="#" class="header__links-item">{{ $t('main_menu') }}</a></li>
+          <li><a href="#opportunities" class="header__links-item">{{ $t('opportunities') }}</a></li>
+          <li><a href="#advantages" class="header__links-item">{{ $t('benefits') }}</a></li>
+          <li><a href="#tarrifs" class="header__links-item">{{ $t('plans') }}</a></li>
+          <li><a href="#contact" class="header__links-item">{{ $t('contact') }}</a></li>
         </ul>
       </div>
       <div class="header__buttons">
         <a href="https://app.call24.uz/login" class="common__button blue">
           <img src="./assets/icons/svg-user.svg" alt="user"/>
-          <p>Kirish</p>
+          <p>{{ $t('login') }}</p>
         </a>
         <!-- <a href="./login.html" class="common__button">
             <img src="./assets/icons/svg-useradd.svg" alt="user" />
@@ -43,16 +43,14 @@
             <div class="swiper-wrapper">
               <div class="introduction__item swiper-slide">
                 <div class="introduction__item-desc">
-                  <h2 class="introduction__item-title">Biznesingiz uchun ishonchli markaz xizmati</h2>
-                  <p class="introduction__item-text">Call24 barcha turdagi aloqalarni jumladan video,
-                    audio va screen orqali qong'iroqlar tezkor va sifatli foydalanishda yordam beruvchi
-                    yagona tizim!</p>
+                  <h2 class="introduction__item-title">{{ $t('main_title') }}</h2>
+                  <p class="introduction__item-text">{{ $t('main_subtitle') }}</p>
                   <div class="introduction__item-buttons">
                     <div class="introduction__item-button white">
-                      <p>Batafsil</p>
+                      <p>{{ $t('more_details') }}</p>
                     </div>
                     <a href="#contact" class="introduction__item-button">
-                      <p>Bog’lanish</p>
+                      <p>{{ $t('contact') }}</p>
                     </a>
                   </div>
                 </div>
@@ -68,10 +66,10 @@
                     mijozlarga xizmat ko'rsatishning sodda, ishonchli va qulay usuli!</p>
                   <div class="introduction__item-buttons">
                     <div class="introduction__item-button white">
-                      <p>Batafsil</p>
+                      <p>{{ $t('more_detail') }}</p>
                     </div>
                     <a href="#contact" class="introduction__item-button">
-                      <p>Bog’lanish</p>
+                      <p>{{ $t('contact') }}</p>
                     </a>
                   </div>
                 </div>
@@ -89,10 +87,10 @@
                     imkonini beradi.</p>
                   <div class="introduction__item-buttons">
                     <div class="introduction__item-button white">
-                      <p>Batafsil</p>
+                      <p>{{ $t('more_detail') }}</p>
                     </div>
                     <a href="#contact" class="introduction__item-button">
-                      <p>Bog’lanish</p>
+                      <p>{{ $t('contact') }}</p>
                     </a>
                   </div>
                 </div>
@@ -123,8 +121,8 @@
     <section id="opportunities" class="opportunities">
       <div class="container">
         <div class="common__titling">
-          <h2 class="common__titling-title">Imkoniyatlar</h2>
-          <p class="common__titling-subtitle">Call24 xizmati sizga quyidagi imkoniyatlarni beradi</p>
+          <h2 class="common__titling-title">{{ $t('opportunities') }}</h2>
+          <p class="common__titling-subtitle">{{ $t('opportunities_detail') }}</p>
         </div>
         <div class="opportunities__content">
           <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-11">
@@ -133,9 +131,9 @@
                 <img src="./assets/icons/opportunity-global.svg" alt="global"/>
               </div>
 
-              <h3 class="opportunities__card-title">To'g'ridan-to'g'ri ulanishlar</h3>
+              <h3 class="opportunities__card-title">{{ $t('opportunities_1') }}</h3>
 
-              <p class="opportunities__card-desc">Qo'ngiroq qilish uchun faqat ishonchli kanallar</p>
+              <p class="opportunities__card-desc">{{ $t('opportunities_1_detail') }}</p>
             </div>
           </div>
           <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-11">
@@ -144,10 +142,9 @@
                 <img src="./assets/icons/opportunity-documents.svg" alt="global"/>
               </div>
 
-              <h3 class="opportunities__card-title">Batafsil hisobotlar</h3>
+              <h3 class="opportunities__card-title">{{ $t('opportunities_2') }}</h3>
 
-              <p class="opportunities__card-desc">Qo'ng'iroqlar - qo'ng'iroqlarning holati va ularni jo'natish
-                statistikasi</p>
+              <p class="opportunities__card-desc">{{ $t('opportunities_2_detail') }}</p>
             </div>
           </div>
           <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-11">
@@ -156,10 +153,9 @@
                 <img src="./assets/icons/opportunity-shield.svg" alt="shield"/>
               </div>
 
-              <h3 class="opportunities__card-title">100% xavfsizlik</h3>
+              <h3 class="opportunities__card-title">{{ $t('opportunities_3') }}</h3>
 
-              <p class="opportunities__card-desc">Biz mijozlar ma'lumotlarining xavfsizligini
-                kafolatlaymiz</p>
+              <p class="opportunities__card-desc">{{ $t('opportunities_3_detail') }}</p>
             </div>
           </div>
           <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-11">
@@ -168,10 +164,9 @@
                 <img src="./assets/icons/opportunity-network.svg" alt="network"/>
               </div>
 
-              <h3 class="opportunities__card-title">Aloqa guruhlari</h3>
+              <h3 class="opportunities__card-title">{{ $t('opportunities_4') }}</h3>
 
-              <p class="opportunities__card-desc">Ma'lumotlar bazasini istalgan parametrlar bo'yicha
-                segmentlarga ajrating</p>
+              <p class="opportunities__card-desc">{{ $t('opportunities_detail') }}</p>
             </div>
           </div>
           <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-11">
@@ -180,9 +175,9 @@
                 <img src="./assets/icons/opportunity-message.svg" alt="message"/>
               </div>
 
-              <h3 class="opportunities__card-title">Qo'ng'iroqlar tahlili</h3>
+              <h3 class="opportunities__card-title">{{ $t('opportunities_5') }}</h3>
 
-              <p class="opportunities__card-desc">Kimlar tomonidan qo'ng'iroq qilinganini bilib oling</p>
+              <p class="opportunities__card-desc">{{ $t('opportunities_5_detail') }}</p>
             </div>
           </div>
           <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-11">
@@ -191,9 +186,9 @@
                 <img src="./assets/icons/opportunity-support.svg" alt="support"/>
               </div>
 
-              <h3 class="opportunities__card-title">24/7 qo'llab-quvvatlash</h3>
+              <h3 class="opportunities__card-title">{{ $t('opportunities_6') }}</h3>
 
-              <p class="opportunities__card-desc">Istalgan vaqtda barcha savollaringizga javob beramiz</p>
+              <p class="opportunities__card-desc">{{ $t('opportunities_6_detail') }}</p>
             </div>
           </div>
         </div>
@@ -448,6 +443,9 @@
     </div>
   </footer>
 </template>
+<script setup>
 
+
+</script>
 <style scoped>
 </style>

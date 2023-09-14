@@ -1,4 +1,67 @@
 {
-  "welcome": "Welcome to my app!",
-  "hello": "Hello, {name}!"
+  "main_menu": "Main Menu",
+  "opportunities": "Opportunities",
+  "benefits": "Benefits",
+  "plans": "Plans",
+  "contact": "Contact",
+  "login": "Login",
+
+  "main_title": "Reliable hub for your business",
+  "main_subtitle": "Call24 is the only system that helps to use all types of communications, including video, audio and screen calls quickly and with high quality!",
+  "more_details": "More details",
+  "opportunities_detail": "Call24 service gives you the following options",
+  "opportunities_1": "Direct connections",
+    "opportunities_1_detail": "Only trusted channels to call",
+    "opportunities_2": "Detailed reports",
+    "opportunities_2_detail": "All information about calls and their duration",
+    "opportunities_3": "100% security",
+    "opportunities_3_detail": "We guarantee the security of your data",
+    "opportunities_4": "Communication groups",
+    "opportunities_4_detail": "Create groups for communication with your employees",
+    "opportunities_5": "Call analytics",
+    "opportunities_5_detail": "Analyze the effectiveness of your calls",
+    "opportunities_6": "24/7 support",
+    "opportunities_6_detail": "We are always ready to help you",
+
+    "benefits_detail": "Call24 service gives you the following benefits",
+    "benefits_question_1": "Why is using Call24 so effective?",
+    "benefits_answer_1": "Call24 is a reliable and secure service that allows you to make calls from anywhere in the world. You can use the service on any device, whether it's a computer, tablet or smartphone. Call24 is a service that is always at hand.",
+    "benefits_2": "The phone is always in hand, users can refer to it in any way they want",
+    "benefits_2_detail": "It allows customers to quickly contact your company in a convenient way through the phone or the Internet.",
+    "benefits_question_2" : "What do you get when you choose Call24?",
+    "benefits_answer_2": "Reliable servers in a secure data center, protection against DoS and DDoS attacks, direct connection to mobile operators - all this ensures a high level of reliability and allows sending millions of messages every month.",
+
+    "plans_detail": "Call24 service gives you the following plans",
+  "purchase": "Purchase",
+    "plans_1": "Start",
+    "plans_1_price": "300 000 UZS",
+    "plans_1_detail": "6000 sms",
+    "plans_1_one": "1 sms (50 UZS)",
+
+  "plans_2": "Standard",
+    "plans_2_price": "450 000 UZS",
+    "plans_2_detail": "10000 sms",
+    "plans_2_one": "1 sms (45 UZS)",
+
+  "plans_3": "Platinum",
+    "plans_3_price": "850 000 UZS",
+    "plans_3_detail": "15000 sms",
+    "plans_3_one": "1 sms (42 UZS)",
+
+  "support_title" : "Continuous technical support is provided for each of our customers.",
+  "name": "Name",
+  "surname": "Surname",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "send_message": "Send message",
+  "phone": "Phone",
+
+  "footer_title": "Subscribe to the latest news and offers",
+    "footer_subtitle": "Subscribe to our newsletter and stay up to date with the latest news and offers.",
+
+  "footer_description": "Call24 is a reliable communication channel with customers and an effective feedback service with minimal costs. Attract new customers, stimulate sales growth, increase consumer loyalty to your business using Call24!",
+  "address": "Tashkent city, Yunusabad city, Amir Temur branch street, 107 B house",
+  "website_creator": "Website created by"
+
 }
