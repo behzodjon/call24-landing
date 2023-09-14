@@ -1,0 +1,203 @@
+.header {
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  z-index: 9;
+  transition: 0.3s;
+}
+.header__content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  width: 15%;
+  margin-right: auto;
+}
+.header__logo img {
+  display: flex;
+  transition: 0.3s;
+  filter: brightness(0) invert(1);
+}
+.header__links {
+  margin-right: 50px;
+}
+.header__links ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.header__links-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.header__links-item:hover {
+  opacity: 0.7;
+}
+.header__buttons {
+  display: flex;
+  gap: 15px;
+}
+.header__buttons .common__button {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.header__buttons .common__button img {
+  filter: brightness(0) invert(1);
+}
+.header__buttons .common__button:hover {
+  color: rgb(74, 101, 156);
+  background: #ffffff;
+}
+.header__buttons .common__button:hover img {
+  filter: revert;
+}
+.header__buttons .common__button.blue {
+  background: #ffffff;
+  color: #263238;
+}
+.header__buttons .common__button.blue img {
+  filter: revert;
+}
+.header__buttons .common__button.blue:hover {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
+}
+.header__buttons .common__button.blue:hover img {
+  filter: brightness(0) invert(1);
+}
+.header__burger {
+  display: none;
+}
+.header.scrolled {
+  box-shadow: 0px 7px 34px -6px rgba(34, 60, 80, 0.2);
+  background: #ffffff;
+}
+.header.scrolled .header__logo img {
+  filter: revert;
+}
+.header.scrolled .header__links-item {
+  color: #263238;
+}
+.header.scrolled .header__links-item:hover {
+  color: rgb(74, 101, 156);
+}
+.header.scrolled .header__buttons .common__button {
+  color: #263238;
+  border: 1px solid #263238;
+}
+.header.scrolled .header__buttons .common__button img {
+  filter: revert;
+}
+.header.scrolled .header__buttons .common__button:hover {
+  color: #ffffff;
+  background: rgb(74, 101, 156);
+}
+.header.scrolled .header__buttons .common__button:hover img {
+  filter: brightness(0) invert(1);
+}
+.header.scrolled .header__buttons .common__button.blue {
+  background: rgb(74, 101, 156);
+  color: #ffffff;
+  border: 1px solid rgb(74, 101, 156);
+}
+.header.scrolled .header__buttons .common__button.blue img {
+  filter: brightness(0) invert(1);
+}
+.header.scrolled .header__buttons .common__button.blue:hover {
+  border: 1px solid #263238;
+  color: #263238;
+  background: transparent;
+}
+.header.scrolled .header__buttons .common__button.blue:hover img {
+  filter: revert;
+}
+
+@media (max-width: 992px) {
+  .header__logo {
+    width: unset;
+  }
+  .header__links {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    transition: 0.3s;
+    transform: translateX(-100%);
+  }
+  .header__links ul {
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 40px;
+  }
+  .header__links-item {
+    font-size: 16px;
+    font-weight: 700;
+    color: #263238 !important;
+  }
+  .header__burger {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    margin-left: 30px;
+  }
+  .header__burger-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: url(../icons/mobile-burger.svg) no-repeat center center;
+    filter: invert(1);
+    transition: 0.3s;
+  }
+  .header__content.active .header__links {
+    transform: translateX(0);
+  }
+  .header__content.active .header__burger-button {
+    background: url(../icons/modal-close.svg) no-repeat center center;
+    background-size: 50% 50%;
+  }
+  .header.scrolled .header__burger-button {
+    filter: revert;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    height: 70px;
+  }
+  .header__logo {
+    width: 120px;
+  }
+  .header__logo a {
+    width: 100%;
+  }
+  .header__logo a img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .header__burger {
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  .header__links {
+    top: 70px;
+  }
+}

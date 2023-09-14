@@ -1,0 +1,147 @@
+@import url(../fonts/Montserrat/Montserrat.css);
+*,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  display: flex;
+}
+
+.common__purehover {
+  transition: 0.3s;
+}
+.common__purehover:hover {
+  opacity: 0.7;
+}
+
+html {
+  scroll-padding-top: 100px !important;
+}
+
+.common__button {
+  border: 1px solid #263238;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 15px 20px;
+  min-width: 150px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #263238;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.common__button img {
+  max-width: 25px;
+  transition: 0.3s;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: none;
+}
+.common__button:hover {
+  color: #ffffff;
+  border: 1px solid rgb(74, 101, 156);
+  background: rgb(74, 101, 156);
+}
+.common__button:hover img {
+  filter: brightness(0) invert(1);
+}
+.common__button.blue {
+  color: #ffffff;
+  border: 1px solid rgb(74, 101, 156);
+  background: rgb(74, 101, 156);
+}
+.common__button.blue img {
+  max-width: 20px;
+  filter: brightness(0) invert(1);
+}
+.common__button.blue:hover {
+  color: #263238;
+  background: transparent;
+  border: 1px solid #263238;
+}
+.common__button.blue:hover img {
+  filter: revert;
+}
+
+.common__titling {
+  margin-bottom: 35px;
+}
+.common__titling-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 100%;
+  color: #263238;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.common__titling-subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 240%;
+  color: #7d8893;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 1200px) {
+  .common__button {
+    min-width: unset;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+  }
+  .common__button img {
+    display: flex;
+  }
+}
+@media (max-width: 992px) {
+  .common__button {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .common__titling-title {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .common__button {
+    width: 40px;
+    height: 40px;
+  }
+  .common__button img {
+    max-width: 15px !important;
+  }
+}

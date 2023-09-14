@@ -1,0 +1,137 @@
+.contact {
+  padding: 60px 0;
+  background: #f9fafc;
+}
+.contact > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__info-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 140%;
+  margin-bottom: 30px;
+  color: #263238;
+}
+.contact__info-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact__info-input {
+  width: 100%;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+  position: relative;
+}
+.contact__info-input.textarea {
+  height: unset;
+}
+.contact__info-input input,
+.contact__info-input textarea {
+  background: #ffffff;
+  border-radius: 10px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+.contact__info-input input:focus + span, .contact__info-input input.filled + span,
+.contact__info-input textarea:focus + span,
+.contact__info-input textarea.filled + span {
+  top: 25%;
+  font-size: 10px;
+}
+.contact__info-input textarea {
+  padding: 15px;
+  height: 180px;
+  display: flex;
+  resize: none;
+}
+.contact__info-input span {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #7d8893;
+  transition: 0.3s;
+}
+.contact__info-input.half {
+  width: 50%;
+}
+.contact__info-button {
+  padding: 15px 55px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+  background: rgb(74, 101, 156);
+  border: 1px solid rgb(74, 101, 156);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact__info-button:hover {
+  background: transparent;
+  color: rgb(74, 101, 156);
+}
+.contact__img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .contact {
+    padding: 30px 0;
+  }
+  .contact > div {
+    flex-direction: column-reverse;
+  }
+  .contact__info-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .contact__info-input {
+    height: 45px;
+    font-size: 14px;
+  }
+  .contact__info-input input {
+    padding-top: 10px;
+  }
+  .contact__info-input span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .contact__img {
+    margin-bottom: 30px;
+  }
+  .contact__info-form {
+    gap: 20px;
+  }
+  .contact__info-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contact__info-input {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+  }
+  .contact__info-input.half {
+    width: 100%;
+  }
+  .contact__info-button {
+    font-size: 14px;
+    margin: auto;
+  }
+}

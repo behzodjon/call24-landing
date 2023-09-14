@@ -4,10 +4,89 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="icon" href="./src/assets/icons/svg-favicon.svg"/>
+      <link rel="icon" type="image/x-icon" href="./src/assets/icons/svg-favicon.svg"/>
+      <link rel="stylesheet" href="./src/assets/libs/bootstrap-grid/bootstrap-grid.min.css"/>
+      <link rel="stylesheet" href="./src/assets/styles/dependencies.css"/>
+      <link rel="stylesheet" href="./src/assets/styles/header.css"/>
+      <link rel="stylesheet" href="./src/assets/styles/index.css"/>
+      <link rel="stylesheet" href="./src/assets/styles/opportunities.css"/>
+      <link rel="stylesheet" href="./src/assets/styles/advantages.css"/>
+      <link rel="stylesheet" href="./src/assets/styles/tarrifs.css"/>
+      <link rel="stylesheet" href="./src/assets/styles/contact.css"/>
+      <link rel="stylesheet" href="./src/assets/styles/footer.css"/>
+      <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <title>Call24.uz - RealSoft</title>
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        function checkval(el) {
+            el.value != "" ? el.classList.add("filled") : el.classList.remove("filled");
+        }
+
+        new WOW({
+            animateClass: "animate__animated",
+        }).init();
+    </script>
+    <script src="./src/assets/libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper(".swiper", {
+            loop: true,
+            effect: "fade",
+            // comments
+
+            // If we need pagination
+            pagination: {
+                el: ".introduction__slider-pg",
+                type: "fraction",
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: ".introduction__slider-nx",
+                prevEl: ".introduction__slider-pr",
+            },
+        });
+
+        $(window).trigger("hashchange").scroll(NavCheck);
+        NavCheck();
+
+        function NavCheck() {
+            if ($(window).scrollTop() == 0) {
+                $(".header").removeClass("scrolled");
+            } else {
+                $(".header").addClass("scrolled");
+            }
+        }
+
+        $(".header__burger-button").click(function () {
+            $(".header__content").toggleClass("active");
+        });
+        $(".header__links-item").click(function () {
+            $(".header__content").removeClass("active");
+        });
+    </script>
+
+    <script>
+        (function (d, w) {
+            w.CALL24_ID = "Vt94vEzCOn9lPnBgTt9GxzAP7lB5WM84";
+
+            (function (u, a = true) {
+                let s = d.createElement("script");
+                s.defer = a;
+                s.src = u;
+                if (d.head) d.head.appendChild(s);
+
+            })("https://app.call24.uz/widget/widget.umd.min.js")
+        })(document, window);
+    </script>
   </body>
 </html>
