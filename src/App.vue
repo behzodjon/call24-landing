@@ -198,17 +198,17 @@
     <section id="advantages" class="advantages">
       <div class="container">
         <div class="common__titling">
-          <h2 class="common__titling-title">Afzalliklar</h2>
-          <p class="common__titling-subtitle">Bizning afzalliklarimiz quyidagicha</p>
+          <h2 class="common__titling-title">{{ $t('benefits') }}</h2>
+          <p class="common__titling-subtitle">{{ $t('benefits_detail') }}</p>
         </div>
         <div class="advantages__content">
           <div class="advantages__block">
             <div class="advantages__desc col-xl-6 col-lg-6 col-md-7 col-sm-10 col-12">
-              <div class="advantages__desc-title wow animate__fadeInUp">Nima uchun Call24 dan foydalanish
-                shunchalik samarali?
+              <div class="advantages__desc-title wow animate__fadeInUp">
+                {{ $t('benefits_question_1') }}
               </div>
-              <div class="advantages__desc-desc wow animate__fadeInUp">Barcha turdagi qo'ng'iroqlarni oziga
-                jamlovchi yagona tizim
+              <div class="advantages__desc-desc wow animate__fadeInUp">
+                {{ $t('benefits_answer_1') }}
               </div>
             </div>
             <div class="advantages__img wow animate__fadeInUp col-xl-6 col-lg-6 col-md-5 col-sm-8 col-10">
@@ -217,11 +217,11 @@
           </div>
           <div class="advantages__block">
             <div class="advantages__desc col-xl-6 col-lg-6 col-md-7 col-sm-10 col-12">
-              <div class="advantages__desc-title wow animate__fadeInUp">Telefon har doim qo'lda,
-                foydalanuvchilar xohlagan usulda murojaat qilishlari mumkin
+              <div class="advantages__desc-title wow animate__fadeInUp">
+                {{ $t('benefits_2') }}
               </div>
-              <div class="advantages__desc-desc wow animate__fadeInUp">Mijozlar telefon yoki internet tarmog'i
-                orqali o'zlariga qulay usulda tezkor sizning kompaniyangiz bilan bog'lanish imkonini.
+              <div class="advantages__desc-desc wow animate__fadeInUp">
+                {{ $t('benefits_2_detail') }}
               </div>
             </div>
             <div class="advantages__img wow animate__fadeInUp col-xl-6 col-lg-6 col-md-5 col-sm-8 col-10">
@@ -230,13 +230,11 @@
           </div>
           <div class="advantages__block">
             <div class="advantages__desc col-xl-6 col-lg-6 col-md-7 col-sm-10 col-12">
-              <div class="advantages__desc-title wow animate__fadeInUp">Call24 ni tanlaganda nimaga
-                erishasiz?
+              <div class="advantages__desc-title wow animate__fadeInUp">
+                {{ $t('benefits_question_2') }}
               </div>
-              <div class="advantages__desc-desc wow animate__fadeInUp">Xavfsiz ma'lumotlar markazidagi
-                ishonchli serverlar, DoS va DDoS hujumlaridan himoyalanish, mobil operatorlarga
-                to'g'ridan-to'g'ri ulanish - bularning barchasi yuqori darajadagi ishonchni ta'minlaydi va
-                har oy millionlab xabarlarni jo'natish imkonini beradi.
+              <div class="advantages__desc-desc wow animate__fadeInUp">
+                {{ $t('benefits_answer_2') }}
               </div>
             </div>
             <div class="advantages__img wow animate__fadeInUp col-xl-6 col-lg-6 col-md-5 col-sm-8 col-10">
@@ -250,20 +248,19 @@
     <section id="tarrifs" class="tarrifs">
       <div class="container">
         <div class="common__titling">
-          <h2 class="common__titling-title">Tariflar</h2>
-          <p class="common__titling-subtitle">CAll24 tizimida tariflar. Eslatib o’tamiz narxlar tarif rejasiga
-            bog’liq!</p>
+          <h2 class="common__titling-title">{{$t('plans')}}</h2>
+          <p class="common__titling-subtitle">{{$t('plans_detail')}}</p>
         </div>
         <div class="tarrifs__content">
           <div class="col-xl-4 col-lg-6 col-md-6 col-sm-10 col-10">
             <div class="tarrifs__card wow animate__fadeInUp" data-wow-delay="">
-              <p class="tarrifs__card-title">START</p>
+              <p class="tarrifs__card-title">{{$t('plans_1')}}</p>
 
               <div class="tarrifs__card-box">
-                <p class="tarrifs__card-price">300 000<span>so’m</span></p>
-                <p class="tarrifs__card-amount">6000 sms</p>
-                <p class="tarrifs__card-perprice">1 sms (50 so’m)</p>
-                <button class="tarrifs__card-button">Sotib olish</button>
+                <p class="tarrifs__card-price">{{$t('plans_1_price')}}</p>
+                <p class="tarrifs__card-amount">{{$t('plans_1_detail')}}</p>
+                <p class="tarrifs__card-perprice">{{$t('plans_1_one')}}</p>
+                <button class="tarrifs__card-button">{{$t('purchase')}}</button>
                 <span></span> <span></span>
               </div>
             </div>
@@ -273,23 +270,23 @@
               <p class="tarrifs__card-title">STANDART</p>
 
               <div class="tarrifs__card-box">
-                <p class="tarrifs__card-price">450 000<span>so’m</span></p>
-                <p class="tarrifs__card-amount">10 0000 sms</p>
-                <p class="tarrifs__card-perprice">1 sms (45 so’m)</p>
-                <button class="tarrifs__card-button">Sotib olish</button>
+                <p class="tarrifs__card-price">{{$t('plans_2_price')}}</p>
+                <p class="tarrifs__card-amount">{{$t('plans_2_detail')}}</p>
+                <p class="tarrifs__card-perprice">{{$t('plans_2_one')}}</p>
+                <button class="tarrifs__card-button">{{$t('purchase')}}</button>
                 <span></span> <span></span>
               </div>
             </div>
           </div>
           <div class="col-xl-4 col-lg-6 col-md-6 col-sm-10 col-10">
             <div class="tarrifs__card wow animate__fadeInUp" data-wow-delay="0.6s">
-              <p class="tarrifs__card-title">PLATINUM</p>
+              <p class="tarrifs__card-title">{{$t('plans_3')}}</p>
 
               <div class="tarrifs__card-box">
-                <p class="tarrifs__card-price">850 000<span>so’m</span></p>
-                <p class="tarrifs__card-amount">20 000 sms</p>
-                <p class="tarrifs__card-perprice">1 sms (42,5 so’m)</p>
-                <button class="tarrifs__card-button">Sotib olish</button>
+                <p class="tarrifs__card-price">{{$t('plans_3_price')}}</p>
+                <p class="tarrifs__card-amount">{{$t('plans_3_detail')}}</p>
+                <p class="tarrifs__card-perprice">{{$t('plans_3_one')}}</p>
+                <button class="tarrifs__card-button">{{$t('purchase')}}</button>
                 <span></span> <span></span>
               </div>
             </div>
@@ -301,29 +298,28 @@
     <section id="contact" class="contact">
       <div class="container">
         <div class="contact__info wow animate__fadeInLeft col-xl-6 col-lg-6 col-md-7 col-sm-12 col-12">
-          <h2 class="contact__info-title">Har bir mijozimiz uchun doimiy texnik ko‘mak berish tashkil
-            etilgan.</h2>
+          <h2 class="contact__info-title">{{$t('support_title')}}</h2>
           <div class="contact__info-form">
             <div class="contact__info-input half">
               <input onkeyup="checkval(this)" type="text"/>
-              <span>Ism</span>
+              <span>{{$t('name')}}</span>
             </div>
             <div class="contact__info-input half">
               <input onkeyup="checkval(this)" type="text"/>
-              <span>Familiya</span>
+              <span>{{$t('surname')}}</span>
             </div>
             <div class="contact__info-input half">
               <input onkeyup="checkval(this)" type="text"/>
-              <span>Telefon</span>
+              <span>{{$t('phone')}}</span>
             </div>
             <div class="contact__info-input half">
               <input onkeyup="checkval(this)" type="text"/>
-              <span>Email</span>
+              <span>{{$t('email')}}</span>
             </div>
             <div class="contact__info-input textarea">
-              <textarea type="text" placeholder="Xabar matni"></textarea>
+              <textarea type="text" :placeholder="$t('message')"></textarea>
             </div>
-            <div class="contact__info-button">Yuborish</div>
+            <div class="contact__info-button">{{$t('send')}}</div>
           </div>
         </div>
         <div class="contact__img wow animate__fadeInRight col-xl-6 col-lg-6 col-md-5 col-sm-8 col-10">
@@ -337,12 +333,12 @@
     <div class="container">
       <div class="footer__head">
         <div class="footer__head-titling">
-          <h3>So‘ngi yangiliklarga a’zo bo‘ling</h3>
-          <p>Bizning faoliyatimizga oid yangiliklarga obuna bo’ling</p>
+          <h3>{{$t('footer_title')}}</h3>
+          <p>{{$t('footer_subtitle')}}</p>
         </div>
         <div class="footer__head-form">
-          <input type="text" placeholder="Email manzilingizni kiriting"/>
-          <button>Obuna bo‘lish</button>
+          <input type="text" :placeholder="$t('email')"/>
+          <button>{{$t('subscribe')}}</button>
         </div>
       </div>
       <div class="footer__main">
@@ -352,40 +348,38 @@
               <img class="common__purehover" src="./assets/icons/logo.svg" alt="logo"/>
             </a>
           </div>
-          <p class="footer__desc-text">Call24 - mijozlar bilan ishonchli aloqa kanali va minimal xarajatlar bilan
-            samarali qayta aloqa xizmat. Call24 dan foydalangan holda yangi mijozlarni jalb qiling, savdo
-            o'sishini rag'batlantiring, iste'molchilarning biznesingizga sodiqligini oshiring!</p>
+          <p class="footer__desc-text">{{$t('footer_description')}}</p>
         </div>
 
         <div class="footer__links col-xl-4 col-lg-4 col-md-12">
           <ul>
-            <p class="footer__title">Menyular</p>
+            <p class="footer__title">Menu</p>
             <a href="#">
-              <li class="footer__links-item"><span>»</span> Bosh sahifa</li>
+              <li class="footer__links-item"><span>»</span>{{$t('main_menu')}}</li>
             </a>
             <a href="#opportunities">
-              <li class="footer__links-item"><span>»</span> Imkoniyatlar</li>
+              <li class="footer__links-item"><span>»</span> {{$t('opportunities')}}</li>
             </a>
             <a href="#advantages">
-              <li class="footer__links-item"><span>»</span> Afzalliklar</li>
+              <li class="footer__links-item"><span>»</span> {{$t('benefits')}}</li>
             </a>
             <a href="#tarrifs">
-              <li class="footer__links-item"><span>»</span> Tariflar</li>
+              <li class="footer__links-item"><span>»</span> {{$t('plans')}}</li>
             </a>
             <a href="#contact">
-              <li class="footer__links-item"><span>»</span> Aloqa</li>
+              <li class="footer__links-item"><span>»</span> {{$t('contact')}}</li>
             </a>
           </ul>
           <ul>
-            <p class="footer__title">Tariflar</p>
+            <p class="footer__title">{{$t('plans')}}</p>
             <a href="#tarrifs">
-              <li class="footer__links-item"><span>»</span> Start</li>
+              <li class="footer__links-item"><span>»</span> {{$t('plans_1')}}</li>
             </a>
             <a href="#tarrifs">
-              <li class="footer__links-item"><span>»</span> Standart</li>
+              <li class="footer__links-item"><span>»</span> {{$t('plans_2')}}</li>
             </a>
             <a href="#tarrifs">
-              <li class="footer__links-item"><span>»</span> Platinum</li>
+              <li class="footer__links-item"><span>»</span> {{$t('plans_3')}}</li>
             </a>
           </ul>
         </div>
@@ -397,8 +391,7 @@
               <div class="footer__contacts-list-img">
                 <img src="./assets/icons/svg-location.svg" alt="location"/>
               </div>
-              <p class="footer__contacts-list-text">Toshkent sh., Yunusobod t., Amir Temur shox ko’chasi, 107
-                B uy</p>
+              <p class="footer__contacts-list-text">{{$t('address')}}</p>
             </li>
             <li>
               <div class="footer__contacts-list-img">
@@ -433,11 +426,9 @@
         </div>
       </div>
       <div class="footer__developer">
-        <p class="footer__developer-text">Copyright © 2023 <span> Call24.</span> Barcha huquqlar himoyalangan</p>
+        <p class="footer__developer-text">Copyright © 2023 <span> Call24.</span> {{$t('all_rights_reserved')}}</p>
         <a href="https://realsoft.uz/" target="_blank" class="footer__developer-link common__purehover">
-          <p>Sayt yaratuvchisi: <span>REALSOFT</span></p>
-          <p>{{ $t('welcome') }}</p>
-          <p>{{ $t('hello', { name: 'John' }) }}</p>
+          <p>{{$t('website_creator')}}: <span>REALSOFT</span></p>
         </a>
       </div>
     </div>

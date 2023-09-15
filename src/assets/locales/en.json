@@ -56,12 +56,12 @@
     "send": "Send",
     "send_message": "Send message",
   "phone": "Phone",
-
+  "subscribe": "Subscribe",
   "footer_title": "Subscribe to the latest news and offers",
     "footer_subtitle": "Subscribe to our newsletter and stay up to date with the latest news and offers.",
 
   "footer_description": "Call24 is a reliable communication channel with customers and an effective feedback service with minimal costs. Attract new customers, stimulate sales growth, increase consumer loyalty to your business using Call24!",
   "address": "Tashkent city, Yunusabad city, Amir Temur branch street, 107 B house",
-  "website_creator": "Website created by"
-
+  "website_creator": "Website created by",
+  "all_rights_reserved": "All rights reserved"
 }
