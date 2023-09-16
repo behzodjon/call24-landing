@@ -15,6 +15,7 @@
           <li><a href="#advantages" class="header__links-item">{{ $t('benefits') }}</a></li>
           <li><a href="#tarrifs" class="header__links-item">{{ $t('plans') }}</a></li>
           <li><a href="#contact" class="header__links-item">{{ $t('contact') }}</a></li>
+          <li><SelectLang/></li>
         </ul>
       </div>
       <div class="header__buttons">
@@ -436,6 +437,8 @@
 </template>
 <script setup>
 
+
+import SelectLang from "./components/SelectLang.vue";
 
 </script>
 <style scoped>

@@ -10,7 +10,8 @@ import uz from '/src/assets/locales/uz.json'
 import ar from '/src/assets/locales/ar.json'
 import uz_cryl from '/src/assets/locales/uz_cryl.json'
 const i18n = createI18n({
-    locale: 'uz', // Set the default locale
+    locale: localStorage.getItem('lang') ,
+
     messages: {
         en,
         ru,
