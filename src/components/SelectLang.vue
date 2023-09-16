@@ -1,6 +1,6 @@
 <script setup>
 
-import {ref, watch} from "vue";
+import {onMounted, ref, watch} from "vue";
 import {useI18n} from "vue-i18n";
 
 const languages = [
@@ -10,31 +10,32 @@ const languages = [
   {name: 'Русский', code: 'ru'},
   {name: 'العربية', code: 'ar'}
 ]
-const {t, locale, setLocale} = useI18n()
-const currentLanguage = ref(localStorage.getItem('lang'))
 
-watch(currentLanguage, (newVal) => {
-  setLocale(newVal)
-  localStorage.setItem('lang', newVal)
+const { locale } = useI18n();
+watch(locale, (newVal) => {
+  localStorage.setItem('locale', newVal)
   const html = document.getElementsByTagName('html')[0]
-  console.log(newVal)
   html.setAttribute('dir', newVal === 'ar' ? 'rtl' : 'ltr')
 })
 
-const changeLanguage = (lang) => {
-  currentLanguage.value = lang
-}
+onMounted(() => {
+ const html = document.getElementsByTagName('html')[0]
+  const locale = localStorage.getItem('locale')
+  if (locale) {
+    html.setAttribute('dir', locale === 'ar' ? 'rtl' : 'ltr')
+  } else {
+    html.setAttribute('dir', 'ltr')
+  }
+})
 
 </script>
 
 <template>
   <div class="select-lang">
-    <select v-model="currentLanguage" @change="changeLanguage(currentLanguage)">
+    <select v-model="$i18n.locale">
       <option v-for="lang in languages" :key="lang.code" :value="lang.code">{{ lang.name }}</option>
     </select>
   </div>
-
-
 </template>
 
 <style scoped>
